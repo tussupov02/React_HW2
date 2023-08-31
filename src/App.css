@@ -1,0 +1,65 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .App{
+    width:800px;
+  }
+  .button__div{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+
+  }
+ button{
+    display: none;
+    position: fixed;
+    background: rgba(253, 253, 253, 0.59);
+    border-radius: 15px;
+    border: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(63, 60, 60);
+ }
+ button:hover{
+    background: rgba(161, 157, 157, 0.322); 
+    color: rgb(237, 52, 1);
+ }
+#roll__button{
+    margin-top: 320px;
+    width: 200px;
+    height: 50px;
+}
+#leave__button{
+    margin-top: 380px;
+    width: 150px;
+    height: 50px;
+}
+#new__game{
+    margin-top: 30px;
+    width: 250px;
+    height: 50px;
+}
+button.active{
+    display: block;
+}
+svg {
+    width: 100px;
+    height: 100px;
+    animation: dice 0.2s;
+    margin-top: 190px;
+    position: fixed;
+  }
+  @keyframes dice {
+    0% {
+      rotate: 0deg;
+    }
+    100% {
+      rotate: 720deg;
+    }
+  }
